@@ -41,3 +41,37 @@ else
     //El usuario es menor de edad
     console.log(nombre + " tiene " + edad + " años, es menor de edad.");
 }
+
+/* OPERADORES LÓGICOS
+    And (Y): &&
+    Or (O): ||
+    Negación: !
+*/
+
+var year = 2018;
+//Negación
+
+if(year != 2016)
+{
+    console.log("El año no es 2016 realmente es: " + year);
+}
+
+//AND
+if(year >= 2000 && year <= 2020)
+{
+    console.log("Estamos en la era actual");
+}
+else
+{
+    console.log("Estamos en la era post-moderna");
+}
+
+//OR
+if(year == 2008 || (year >= 2018 && year ==2028))
+{
+    console.log("El año acaba en 8");
+}
+else
+{
+    console.log("Año no registrado");
+}
