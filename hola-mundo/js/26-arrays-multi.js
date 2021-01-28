@@ -30,4 +30,7 @@ if(indice > -1)
 
 var peliculas_string = peliculas.join();            //Convierte el array en un string separado por comas
 
-console.log(peliculas_string);
+var cadena = "texto1, texto2, texto3";
+var cadena_array = cadena.split(", ");
+
+console.log(cadena_array);
