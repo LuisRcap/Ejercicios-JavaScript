@@ -21,9 +21,15 @@ else
 
 document.write("<h1>Lenguajes de programación del 2018</h1>");
 document.write("<ul>");
+/*
 for(var i = 0; i < lenguajes.length; i++)
 {   
     document.write("<li>" + lenguajes[i] + "</li>");
 }
+*/
+lenguajes.forEach((elemento, indice, arr) => {
+    console.log(arr);
+    document.write("<li> indice: " + indice + " elemento " + elemento + "</li>");
+});
 
 document.write("</ul>");
