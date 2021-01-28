@@ -3,6 +3,11 @@
 var categorias = ['Accion', 'Terror', 'Comedia'];
 var peliculas = ['La verdad duele', 'La vida es bella', 'Gran Torino'];
 
+peliculas.sort();                   //Ordena alfabeticamente
+peliculas.reverse();                //Le da la vuelta al arreglo
+
+console.log(peliculas);
+
 var cine = [categorias, peliculas];
 
 //console.log(cine[0][1]);
