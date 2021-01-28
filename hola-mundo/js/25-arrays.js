@@ -26,10 +26,15 @@ for(var i = 0; i < lenguajes.length; i++)
 {   
     document.write("<li>" + lenguajes[i] + "</li>");
 }
-*/
+
 lenguajes.forEach((elemento, indice, arr) => {
     console.log(arr);
     document.write("<li> indice: " + indice + " elemento " + elemento + "</li>");
-});
+});*/
+
+for(let lenguaje in lenguajes)
+{
+    document.write("<li>" + lenguajes[lenguaje] + "</li>"); 
+}
 
 document.write("</ul>");
