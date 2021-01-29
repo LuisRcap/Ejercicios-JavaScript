@@ -38,3 +38,16 @@ for(let lenguaje in lenguajes)
 }
 
 document.write("</ul>");
+
+
+//BUSQUEDAS
+
+var precios = [10, 20, 50, 80, 12];
+
+
+
+//var busqueda = lenguajes.findIndex(lenguaje => lenguaje == "JS"); //Busca el valor indicado y lo regresa
+var busqueda = precios.some(precio => precio > 70);                 //Busca que se cumpla una condición concreta y devuelve un booleano
+
+
+console.log(busqueda);
