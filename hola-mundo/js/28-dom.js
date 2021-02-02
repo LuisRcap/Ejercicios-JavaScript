@@ -41,5 +41,26 @@ seccion.append(hr);
 
 
 //Conseguir elementos por su clase
+var divsRojos = document.getElementsByClassName('rojo');
+var divsAmarillos = document.getElementsByClassName('amarillo');
 
-console.log(caja);
+divsAmarillos[0].style.background = "yellow";
+
+for(var div in divsRojos)
+{
+    if(divsRojos[div].className == "rojo")
+    {
+        divsRojos[div].style.background = "red";
+    }
+}
+
+//Query selector
+
+var id = document.querySelector(".rojo");
+console.log(id);
+
+var claseRojo = document.querySelector("div.rojo");
+console.log(claseRojo);
+
+var etiqueta = document.querySelectorAll("div");
+console.log(etiqueta);
