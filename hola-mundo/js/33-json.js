@@ -26,4 +26,6 @@ window.addEventListener('load', () =>
         p.append(peliculas[index].titulo + " - " + peliculas[index].year);
         caja_peliculas.append(p);
     }
+
+    
 });
