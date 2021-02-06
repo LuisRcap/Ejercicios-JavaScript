@@ -24,6 +24,7 @@ window.addEventListener('load', () =>
     boton.addEventListener('click', function()              //Cambiando "click" por "dblclick" la función se ejecuta con doble click
     {
         cambiarColor();
+        this.style.border = "10px solid black";
     });
 
     //Mouse over
