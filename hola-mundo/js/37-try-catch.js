@@ -1,0 +1,14 @@
+'use strict'
+
+try
+{
+    var year = 2019;
+    alert(year);
+    var vector = new Array(99999999999999999999999);
+    console.log(decodeURIComponent("https://github.com/LuisRcap"));
+}
+catch(error)
+{
+    console.log(error);
+    alert("Ha ocurrido un error en el código");
+}
