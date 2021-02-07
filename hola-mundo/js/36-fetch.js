@@ -24,6 +24,10 @@ var div_janet = document.querySelector("#janet");
         .then(user => 
             {
                 mostrarJanet(user.data);
+            })
+        .catch(error => 
+            {
+                alert("Error en las peticiones: " + error);
             });
         
 
