@@ -31,8 +31,11 @@ $(document).ready(() =>
         else
         {
             that.removeClass("grande");
-        }
-        
-        
+        } 
     });
+
+    //SELECTORES DE ATRIBUTO
+
+    $('[title="Google"]').css("color", "#ccc");
+    $('[title="Facebook"]').css("background", "blue").css("color", "#ccc");
 });
