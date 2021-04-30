@@ -8,11 +8,21 @@
     <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/01-selectores.js"></script>
+
+    <style>
+        .zebra
+        {
+            border: 5px dashed black;
+        }
+    </style>
 </head>
 <body>
     <h1>Aprendiendo jQuery con Víctor Robles</h1>
-    <p id="rojo">Ejercicios de jQuery</p>
-    <p id="amarillo">Practicando con selectores</p>
-    <p id="verde">Quiero ser un párrafo verde</p>
+    <p id="rojo" class="sin_borde">Ejercicios de jQuery</p>
+    <p id="amarillo" class="zebra">Practicando con selectores</p>
+    <p id="verde" class="sin_borde">Quiero ser un párrafo verde</p>
+
+    <p class="zebra">Soy un párrafo blanco</p>
+
 </body>
 </html>
