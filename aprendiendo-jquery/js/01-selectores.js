@@ -38,4 +38,11 @@ $(document).ready(() =>
 
     $('[title="Google"]').css("color", "#ccc");
     $('[title="Facebook"]').css("background", "blue").css("color", "#ccc");
+
+    //OTROS
+
+    //$('p, a').addClass("margen-superior");
+
+    var busqueda = $("#elemento2").parent().parent().find('.resaltado');
+    console.log(busqueda);
 });
