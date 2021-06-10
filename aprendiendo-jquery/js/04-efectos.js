@@ -8,14 +8,18 @@ $(document).ready(() =>
     {                                           //slideUp, slideDown, show y hide
         $(this).hide();
         $("#ocultar").show()
-        caja.fadeTo('slow', 1);
+        caja.slideDown('slow');
     });
 
     $("#ocultar").click(function()
     {
         $(this).hide();
         $("#mostrar").show()
-        caja.fadeTo('slow', 0);
+        caja.slideUp('slow', () =>
+        {
+            console.log("Cartel ocultado");
+        });
+        
     });
 
 
