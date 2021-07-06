@@ -9,10 +9,20 @@ $(document).ready(() =>
     // Seleccioonar y ordenar elementos
     //$('.lista-seleccionable').selectable();
     $('.lista-seleccionable').sortable(
-        {
-            update: function(event, ui) {
-                console.log('Ha cambiado la lista');
-            }
+    {
+        update: function(event, ui) {
+            console.log('Ha cambiado la lista');
         }
-    );
+    });
+
+    // Drop
+    $('#elemento-movido').draggable();
+    $('#area').droppable({
+        drop: function()
+        {
+            console.log("Has soltado algo dentro del área");
+        }
+    });
+
+
 });
