@@ -23,11 +23,33 @@
             margin: 20px;
             float: left;
         }
+
+        .lista-seleccionable li
+        {
+            width: 80%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        ul .ui-selecting {background-color: green;}     /* Elemeno que se está seleccionando*/    
+        ul .ui-selected {background-color: blue;}       /* Elemeno que seleccionado*/
+
     </style>
 
 </head>
 <body>
     <h1>Aprendiendo jQuery - jQuery UI</h1>
+
+    <ul class="lista-seleccionable">
+        <li>GTA V</li>
+        <li>Need for speed</li>
+        <li>Crash Bandicoot</li>
+        <li>Super Mario</li>
+        <li>Galaxian</li>
+    </ul>
+
     <div class="elemento">
         Hola, soy un elemento de la web
     </div>
