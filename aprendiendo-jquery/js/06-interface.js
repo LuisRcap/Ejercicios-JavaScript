@@ -51,4 +51,7 @@ $(document).ready(() =>
     // Datepicker    
     $('#calendario').datepicker();
 
+    // Tabs
+    $('#pestanas').tabs();
+
 });
