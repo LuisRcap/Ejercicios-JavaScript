@@ -39,4 +39,7 @@ $(document).ready(() =>
         $('.caja-efectos').toggle('shake', 4000);       // Efecto con velocidad en milisegundos
     });
 
+    // Tooltip
+    $(document).tooltip();
+
 });
