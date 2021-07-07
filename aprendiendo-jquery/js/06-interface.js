@@ -47,6 +47,8 @@ $(document).ready(() =>
     {
         $('#popup').dialog();
     });
-    
+
+    // Datepicker    
+    $('#calendario').datepicker();
 
 });
