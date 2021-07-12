@@ -193,3 +193,9 @@ footer
     margin-top: 50px;
     line-height: 47px;
 }
+
+/*Estas son clases que están en el cdn que se cargó para usar el slider*/
+.bx-wrapper, .bx-viewport
+{
+    height: 250px !important;
+}
