@@ -146,7 +146,9 @@ $(document).ready(() =>
 
         $.validate(
         {
-            lang: 'es'
+            lang: 'es',
+            errorMessagePosition: 'top',
+            scrollToTopOnError: 'true'
         });
     }
 
