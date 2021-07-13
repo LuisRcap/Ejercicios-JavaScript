@@ -1,5 +1,6 @@
 // string
-let cadena: string = "LuisRcap";
+let cadena: string | number = "LuisRcap";
+cadena = 44;
 
 // number
 let numero: number = 12;

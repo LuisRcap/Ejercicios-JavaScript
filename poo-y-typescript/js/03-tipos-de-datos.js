@@ -1,5 +1,6 @@
 // string
 var cadena = "LuisRcap";
+cadena = 44;
 // number
 var numero = 12;
 // booleano
