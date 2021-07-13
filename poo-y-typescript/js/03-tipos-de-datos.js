@@ -1,4 +1,5 @@
 // string
+//let cadena: string | number = "LuisRcap";
 var cadena = "LuisRcap";
 cadena = 44;
 // number

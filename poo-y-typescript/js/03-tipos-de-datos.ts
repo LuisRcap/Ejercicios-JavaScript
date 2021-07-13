@@ -1,5 +1,8 @@
+type alfanumerico = string | number;
+
 // string
-let cadena: string | number = "LuisRcap";
+//let cadena: string | number = "LuisRcap";
+let cadena: alfanumerico = "LuisRcap";
 cadena = 44;
 
 // number
