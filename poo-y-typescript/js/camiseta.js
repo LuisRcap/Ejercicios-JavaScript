@@ -16,3 +16,5 @@ var Camiseta = /** @class */ (function () {
     };
     return Camiseta;
 }());
+var camiseta = new Camiseta("Roja", "Manga larga", "Nike", "L", 15);
+console.log(camiseta);
