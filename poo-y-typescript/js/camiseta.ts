@@ -27,9 +27,3 @@ class Camiseta
         return this.color;
     }
 }
-
-var camiseta = new Camiseta("rojo", "Manga larga", "Nike", "L", 14);
-camiseta.setColor("Rojo");
-//camiseta.getColor();
-
-console.log(camiseta);
