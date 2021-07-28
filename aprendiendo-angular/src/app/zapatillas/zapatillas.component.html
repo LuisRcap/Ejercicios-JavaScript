@@ -21,10 +21,15 @@
         <span [ngStyle]="
         {
             'text-decoration': !zapatilla.stock ? 'line-through': 'none'
-        }">{{zapatilla.nombre}} - <strong>{{zapatilla.precio}}$ </strong></span>
+        }">{{zapatilla.nombre}} - 
+            <strong [class.altoPrecio]="zapatilla.precio >= 80">
+                {{zapatilla.precio}}$ 
+            </strong>
+        </span>
         <span *ngIf="zapatilla.precio < 80" 
-        [style.background]="zapatilla.precio < 80 ? 'green': 'transparent'"
-        [style.color]="zapatilla.precio < 80 ? 'white': 'black'">¡EN OFERTA!</span>
+            [style.background]="zapatilla.precio < 80 ? 'green': 'transparent'"
+            [style.color]="zapatilla.precio < 80 ? 'white': 'black'"
+            >¡EN OFERTA!</span>
     </li>
 </ul>
 
