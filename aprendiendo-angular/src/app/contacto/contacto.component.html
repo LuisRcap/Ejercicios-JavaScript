@@ -2,12 +2,12 @@
 
 <form #formContacto="ngForm" (ngSubmit)="onSubmit(formContacto)">
     <label for="nombre">Nombre</label> <br/>
-    <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre" required pattern="[a-zA-Z]+"/>
+    <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre" required pattern="([a-zA-Z]+\s*)+"/>
     <span *ngIf="nombre.touched && !nombre.valid">El nombre es obligatorio</span>
     <br/>
 
     <label for="apellidos">Apellidos</label> <br/>
-    <input type="text" name="apellidos" #apellidos="ngModel" [(ngModel)]="usuario.apellidos" required pattern="[a-zA-Z]+"/>
+    <input type="text" name="apellidos" #apellidos="ngModel" [(ngModel)]="usuario.apellidos" required pattern="([a-zA-Z]+\s*)+"/>
     <span *ngIf="apellidos.touched && !apellidos.valid">Los apellidos son obligatorio</span>
     <br/>
 
