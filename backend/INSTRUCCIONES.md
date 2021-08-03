@@ -44,4 +44,8 @@ Por último se debe instalar la dependencia llamada **nodemon**, lo que hace est
 
 En este caso la bandera _--save_ cambió a _--save-dev_ para que esta dependencia sólo se ejecute cuando esté en desarrollo en local, cuando se suba a un servidor esta dependencia no se tomará en cuenta.
 
+Una vez hecho esto, en el archivo package.json se debe agregar en la parte de scripts la siguiente línea para que nodemon funcione:
+
+*start: "nodemon index.js"*
+
 Con esto nuestro entorno en el proyecto estará listo para empezar a trabajar. 
