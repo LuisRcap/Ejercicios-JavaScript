@@ -48,4 +48,7 @@ Una vez hecho esto, en el archivo package.json se debe agregar en la parte de sc
 
 *start: "nodemon index.js"*
 
-Con esto nuestro entorno en el proyecto estará listo para empezar a trabajar. 
+Con esto nuestro entorno en el proyecto estará listo para empezar a trabajar.
+-----------------------------------------
+
+**Nota:** Para iniciar el servidor de node se debe ejecutar el comando _npm start_ en la raíz del proyecto.
