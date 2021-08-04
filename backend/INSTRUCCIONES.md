@@ -52,3 +52,5 @@ Con esto nuestro entorno en el proyecto estará listo para empezar a trabajar.
 -----------------------------------------
 
 **Nota:** Para iniciar el servidor de node se debe ejecutar el comando _npm start_ en la raíz del proyecto.
+
+Comunicación de la api: model -> controller -> routes -> app.js -> index.js
