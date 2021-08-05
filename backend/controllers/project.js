@@ -55,6 +55,20 @@ var controller =
                 project: project
             });
         });
+    },
+
+    getProjects: function(req, res)
+    {
+        Project.find({/*Parametros de búsqueda en estilo json ej. year: 2021*/ }).sort('-year').exec((err, projects) =>
+        {
+            if(err) return res.status(500).send({message: "Error al devolver los datos."});
+
+            if(!projects) return res.status(404).send({message: "No hay mensajes para mostrar."});
+
+            return res.status(200).send({
+                projects: projects
+            });
+        });
     }
 };
 
