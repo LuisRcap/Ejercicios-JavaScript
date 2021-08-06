@@ -86,6 +86,54 @@ var controller =
                 project: projectUpdated
             });
         });
+    },
+
+    deleteProject: function(req, res)
+    {
+        var projectId = req.params.id;
+
+        Project.findByIdAndRemove(projectId, (err, projectDeleted) =>
+        {
+            if(err) return res.status(500).send({message: "No se ha podido borrar el proyecto."});
+
+            if(!projectDeleted) return res.status(404).send({message: "No se puede eliminar ese proyecto."});
+
+            return res.status(200).send({
+                project: projectDeleted
+            });
+        });
+    },
+
+    uploadImage: function(req, res)
+    {
+        var projectId = req.params.id;
+        var fileName = 'Imagen no subida...';
+
+        if(req.files)
+        {
+            var filePath = req.files.image.path;
+            var fileSplit = filePath.split('\\');
+            let fileName = fileSplit[1];
+
+            Project.findByIdAndUpdate(projectId, {image: fileName}, {new: true},(err, projectUpdated) =>
+            {
+                if(err) return res.status(500).send({message: "La imagen no se ha subido"});
+
+                if(!projectUpdated) return res.status(404).send({message: "El proyecto no existe y no se ha guardado la imagen"});
+
+                return res.status(200).send({
+                    project: projectUpdated
+                });
+            });
+
+            
+        }
+        else
+        {
+            return res.status(200).send({
+                message: fileName
+            });
+        }
     }
 };
 
