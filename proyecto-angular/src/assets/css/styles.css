@@ -182,7 +182,7 @@ article.about
 
 form
 {
-	width: 50%;
+	width: 80%;
 }
 
 form label
@@ -198,7 +198,7 @@ form input[type="number"],
 form input[type="email"],
 form textarea
 {
-	width: 80%;
+	width: 40%;
 	padding: 5px;
 }
 
@@ -219,4 +219,30 @@ form button:hover,
 form input[type="submit"]:hover
 {
 	background: rgba(53, 103, 164, 0.8);
+}
+
+form input[disabled]
+{
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+.form_error
+{
+	font-size: 13px;
+	padding: 3px;
+	background: red;
+	color: white;
+	margin-left: 5px;
+}
+
+.form_error_textarea
+{
+	position: absolute;
+	font-size: 13px;
+	padding: 3px;
+	background: red;
+	color: white;
+	margin-left: 5px;
+	margin-top: 1%;
 }
