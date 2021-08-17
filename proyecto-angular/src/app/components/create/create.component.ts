@@ -45,10 +45,11 @@ export class CreateComponent implements OnInit {
             console.log(result);
 
             this.status = 'success';
+            form.reset();
           });
 
           this.status = 'success';
-          location.reload();
+          form.reset();
 
         }
         else this.status = 'failed';
