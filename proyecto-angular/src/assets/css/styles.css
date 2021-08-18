@@ -168,6 +168,8 @@ article.about
 /* Sección con formulario */
 .container
 {
+	display: flex;
+	flex-wrap: wrap;
 	padding: 50px;
 	padding-top: 10px;
 }
@@ -178,6 +180,24 @@ article.about
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 10px;
 	margin-bottom: 15px;
+}
+
+.container .image
+{
+	float: left;
+	width: 47%;
+}
+
+.container .image img
+{
+	width: 100%;
+}
+
+.container .data
+{
+	float: left;
+	width: 48%;
+	margin-left: 30px;
 }
 
 form
@@ -203,7 +223,9 @@ form textarea
 }
 
 form button,
-form input[type="submit"]
+form input[type="submit"],
+.button-edit,
+.button-delete
 {
 	display: block;
 	font-size: 17px;
@@ -213,6 +235,27 @@ form input[type="submit"]
 	background: rgba(53, 103, 164, 1);
 	border: 1px solid rgba(13, 67, 133, 1);
 	cursor: pointer;
+}
+
+.button-edit,
+.button-delete
+{
+	width: 20%;
+	float: left;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.button-edit
+{
+	background: orange;
+	border: none;
+}
+
+.button-delete
+{
+	background: red;
+	border: none;
 }
 
 form button:hover,
