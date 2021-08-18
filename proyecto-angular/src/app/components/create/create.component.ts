@@ -14,6 +14,7 @@ export class CreateComponent implements OnInit {
 
   public title: string;
   public project: Project;
+  public save_project: Project;
   public status: string;
   public filesToUpload: Array<File>;
 
@@ -25,6 +26,7 @@ export class CreateComponent implements OnInit {
     this.project = new Project('', '', '', '', 2021, '', '');
     this.status = '';
     this.filesToUpload = [];
+    this.save_project = new Project('', '', '', '', 2021, '', '');
   }
 
   ngOnInit(): void {
@@ -44,10 +46,12 @@ export class CreateComponent implements OnInit {
           .then((result: any) =>{
             console.log(result);
 
+            this.save_project = result.project;
+
             this.status = 'success';
             form.reset();
           });
-
+          this.save_project = response.project;
           this.status = 'success';
           form.reset();
 
