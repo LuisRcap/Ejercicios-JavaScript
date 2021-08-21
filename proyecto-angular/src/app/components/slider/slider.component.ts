@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 declare const $: any;
 
 @Component({
@@ -10,10 +10,19 @@ export class SliderComponent implements OnInit {
 
   @Input() public anchura: number;
   @Input('etiquetas') public captions: null | boolean;
+  @Output() conseguirAutor = new EventEmitter();
+
+  public autor: any;
 
   constructor(){
     this.anchura = 0;
     this.captions = null;
+
+    this.autor = {
+      nombre: "Luis Rico",
+      website: "www.github.com/LuisRcap",
+      youtube: "Ninguno"
+    };
   }
 
   ngOnInit(): void {
@@ -29,6 +38,10 @@ export class SliderComponent implements OnInit {
       captions: this.captions,
       slideWidth: this.anchura
     });
+  }
+
+  lanzar(event: any){
+    this.conseguirAutor.emit(this.autor);
   }
 
 }

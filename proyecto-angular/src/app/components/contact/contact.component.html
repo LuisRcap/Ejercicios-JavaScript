@@ -9,7 +9,10 @@
   <div *ngIf="anchuraToSlider > 0">
     <slider [anchura]="anchuraToSlider"
             [etiquetas]="captions"
+            (conseguirAutor)="getAutor($event)"
     ></slider>
   </div>
+
+  {{autor.nombre + " " + autor.website}}
 
 </div>

@@ -12,11 +12,16 @@ export class ContactComponent implements OnInit {
   public widthSlider: number;
   public anchuraToSlider: any;
   public captions: boolean;
+  public autor: any;
 
   constructor(){
     this.widthSlider = 0;
     this.anchuraToSlider = 0;
     this.captions = true;
+    this.autor = {
+      nombre: "",
+      website: ''
+    }
   }
 
   ngOnInit(): void {
@@ -29,6 +34,10 @@ export class ContactComponent implements OnInit {
 
   resetearSlider(){
     this.anchuraToSlider = false;
+  }
+
+  getAutor(event: any){
+    this.autor = event;
   }
 
 }
