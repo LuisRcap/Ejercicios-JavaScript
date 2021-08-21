@@ -16,6 +16,6 @@ Este comando nos permitirá que Angular reconozca el símbolo _$_ y así poder u
 
 Finalmente para que funcione, en cada archivo se debe hacer el import:
 
-**_import * as $ from 'jquery';_**
+**_declare const $: any;_**
 
 Con esto la integración de jQuery en Angular estará completa y totalmente funcional.
