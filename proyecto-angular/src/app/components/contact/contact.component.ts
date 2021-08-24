@@ -27,7 +27,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     var opcion_clasica = document.querySelector('#texto')?.innerHTML;    
-    alert(this.textos.nativeElement.textContent);
+    //alert(this.textos.nativeElement.textContent);
   }
 
   cargarSlider(){
