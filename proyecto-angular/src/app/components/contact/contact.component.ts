@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { empty } from 'rxjs';
+import { Component, OnInit, ViewChild } from '@angular/core';
 declare const $: any;
 
 @Component({
@@ -13,6 +12,7 @@ export class ContactComponent implements OnInit {
   public anchuraToSlider: any;
   public captions: boolean;
   public autor: any;
+  @ViewChild('textos', {static: true}) textos: any;
 
   constructor(){
     this.widthSlider = 0;
@@ -21,11 +21,13 @@ export class ContactComponent implements OnInit {
     this.autor = {
       nombre: "",
       website: ''
-    }
+    };
+    this.textos = '';
   }
 
   ngOnInit(): void {
-    
+    var opcion_clasica = document.querySelector('#texto')?.innerHTML;    
+    alert(this.textos.nativeElement.textContent);
   }
 
   cargarSlider(){
