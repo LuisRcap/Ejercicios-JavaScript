@@ -2,7 +2,7 @@
 class Coche {
     constructor() {
         this.color = null;
-        this.modelo = null;
+        this.modelo = "";
         this.velocidad = 0;
     }
     getColor() {
@@ -10,6 +10,9 @@ class Coche {
     }
     setColor(color) {
         this.color = color;
+    }
+    getModelo() {
+        return this.modelo;
     }
     getVelocidad() {
         return this.velocidad;

@@ -1,11 +1,16 @@
-class Coche{
-    public color: string | null;
-    public modelo: string | null;
-    public velocidad: number;
+interface CocheBase{
+    getModelo():string;
+    getVelocidad():number;
+}
+
+class Coche implements CocheBase{
+    private color: string | null;
+    private modelo: string;
+    private velocidad: number;
 
     constructor(){
         this.color = null;
-        this.modelo = null;
+        this.modelo = "";
         this.velocidad = 0;
     }
 
@@ -15,6 +20,10 @@ class Coche{
 
     public setColor(color: string){
         this.color = color;
+    }
+
+    public getModelo(): string{
+        return this.modelo;
     }
 
     public getVelocidad():number{
